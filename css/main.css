@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 .contenedor {
   width: 100%;
@@ -8,28 +9,60 @@
   display: flex;
   align-items: center;
 }
+form {
+  width: 100%;
+}
 .formulario {
   width: 90%;
-  height: 300px;
+  /* height: 300px; */
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: black solid 1px;
+  /* border: black solid 1px; */
 }
 .formulario-campos {
   width: 100%;
   /* margin: 0 auto; */
-  border: red solid 1px;
+  /* border: black solid 1px; */
   /* display: flex; */
 }
 .campos-division {
-  width: 600px;
+  width: 100%;
   display: flex;
+  margin: auto;
+  align-items: center;
 }
 .formulario-campos .campos-division input {
   width: 100%;
   border-radius: 20px;
   margin: 5px;
   padding: 10px;
+}
+.formulario-campos .campos-division textarea {
+  width: 100%;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 10px;
+}
+.formulario-campos .campos-division .check {
+  width: 10%;
+  height: 30px;
+}
+.formulario-campos .campos-division .boton {
+  border: 3px red solid;
+  color: white;
+  background-color: black;
+  border-radius: 0px;
+  width: 20%;
+  transition: all 0.3s ease-in;
+}
+.formulario-campos .campos-division .boton:hover {
+  background: transparent;
+  color: black;
+  border: 3px gray solid;
+  cursor: pointer;
+}
+.formulario-campos .campos-division .check:hover {
+  cursor: pointer;
 }
